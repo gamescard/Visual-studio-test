@@ -2,15 +2,34 @@ public static void random()
 {
 int randomNumber = random.Next(0,2);
 }
- private void btn_2_Click(object sender, EventArgs e)
+public static void rand()
  {
+//it is a bomb
     if( randomNumber == 1) {
  
      btn_2.BackgroundImage = Resources.Bomb;
+
+if (score == 0)
+{
+   lbl_score.Text = score.ToString();
 }
 else {
-btn_2.backgroundImage = Resource.Treasure;
+   score = score - 1;
+   lbl_score.Text = score.ToString();
+}
+}
+//it is a treasure
+else {
+   btn_2.backgroundImage = Resource.pngtree_glittering_pirate_treasure_chest_overflowing_with_gold_coins_and_jewels_png_image_21025515;
+   score = score + 1;
+   lbl_score.Text = score.ToString();
+}
 }
 
-     btn_2.Enables = false;
+private void btn_1_Click(object sender, EventArgs e)
+{
+    rand();
+    btn_1.Enabled = false;
+}
+      
 
