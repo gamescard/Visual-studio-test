@@ -1,9 +1,12 @@
-public static void random()
+public static int create_random_number()
 {
-int randomNumber = random.Next(0,2);
+  Random rand = new Random();
+  int randomNumber = rand.Next(0,2);
+  return randomNumber;
 }
-public static void rand()
- {
+public static void set_button_type()
+{
+  int randomNumber = create_random_number();
 //it is a bomb
     if( randomNumber == 1) {
  
