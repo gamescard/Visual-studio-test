@@ -1,0 +1,16 @@
+public static void random()
+{
+int randomNumber = random.Next(0,2);
+}
+ private void btn_2_Click(object sender, EventArgs e)
+ {
+    if( randomNumber == 1) {
+ 
+     btn_2.BackgroundImage = Resources.Bomb;
+}
+else {
+btn_2.backgroundImage = Resource.Treasure;
+}
+
+     btn_2.Enables = false;
+
